@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "terracedgardens",
+	"version": "${version}",
+	"name": "Terraced Gardens",
+	"description": "Terraced Gardens seeks to refresh Minecraft with improved progression through things both new and old.",
+	"authors": [
+		"strawbriars"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/terracedgardens/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"strawbriars.terracedgardens.TerracedGardens"
+		],
+		"fabric-datagen": [
+			"strawbriars.terracedgardens.TerracedGardensDataGenerator"
+		],
+		"client": [
+			"strawbriars.terracedgardens.TerracedGardensClient"
+		]
+	},
+	"mixins": [
+		"terracedgardens.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
