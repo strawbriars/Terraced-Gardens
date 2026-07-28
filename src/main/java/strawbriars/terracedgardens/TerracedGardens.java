@@ -6,6 +6,7 @@ import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import strawbriars.terracedgardens.item.ModItems;
 
 public class TerracedGardens implements ModInitializer {
 	public static final String MOD_ID = "terracedgardens";
@@ -13,7 +14,7 @@ public class TerracedGardens implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
 	}
 
 	public static Identifier id(String path) {
