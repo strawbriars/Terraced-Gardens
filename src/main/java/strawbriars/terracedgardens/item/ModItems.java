@@ -10,7 +10,7 @@ import strawbriars.terracedgardens.TerracedGardens;
 
 public class ModItems {
     public static final Item SILVER_INGOT = registerItem("silver_ingot", new Item(new Item.Settings()));
-
+    public static final Item RAW_SILVER = registerItem("raw_silver", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(TerracedGardens.MOD_ID, name), item);
@@ -21,6 +21,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
            entries.add(SILVER_INGOT);
+           entries.add(RAW_SILVER);
         });
     }
 }
