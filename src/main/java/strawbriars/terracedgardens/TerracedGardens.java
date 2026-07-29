@@ -6,6 +6,7 @@ import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import strawbriars.terracedgardens.block.ModBlocks;
 import strawbriars.terracedgardens.item.ModItems;
 
 public class TerracedGardens implements ModInitializer {
@@ -15,6 +16,7 @@ public class TerracedGardens implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 
 	public static Identifier id(String path) {
