@@ -3,5 +3,8 @@
   "item.terracedgardens.raw_silver": "Raw Silver",
 
   "block.terracedgardens.silver_block": "Block of Silver",
-  "block.terracedgardens.raw_silver_block": "Block of Raw Silver"
+  "block.terracedgardens.raw_silver_block": "Block of Raw Silver",
+
+  "itemgroup.terracedgardens.terraced_gardens_items": "Terraced Gardens Items",
+  "itemgroup.terracedgardens.terraced_gardens_blocks": "Terraced Gardens Blocks"
 }
